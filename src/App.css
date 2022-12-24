@@ -1,38 +1,103 @@
+
+body {
+  background: white;
+}
 .App {
+  width: 100%;
+  font-family: Menlo, baskerville, sans;
+}
+.username {
+  text-align: right;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 1rem;
+  color: rgb(204, 119, 133);
+  margin-right: 20px;
+}
+.header {
+  
+  margin: 15px;
+  font-weight: bold;
+  font-size: 30px;
+  margin-left: 550px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(20, 19, 19);
+  display: flex;
+  text-align:center;
+}
+
+
+.drop {
+  display: flex;
+}
+
+
+.column {
+  margin-top: 20px;
+  width: 100%;
+  justify-content: space-around;
+  padding: 10px;
   text-align: center;
+  border-style:outset;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.datatitle {
+  padding-bottom: 1px;
+  border-bottom: 3px solid;
+  font-size: 1rem;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.droppable_column {
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.draggable_item {
+  padding: 20px;
+  border: 1px solid aliceblue;
+  font-family: Menlo, baskerville, sans;
+  font-size: 18px; /* FONT SIZE */
+  text-align: center; /* ALIGN TEXT */
+  color: #222324; /* FONT COLOR */
+  line-height: 1.6em;
+  transition: 0.3s;
+  box-shadow: 0 8px 40px -16px rgba(0, 0, 0, 0.3);
+  background-color: white opacity 80%;
+  border-radius: 25px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.done {
+  background-color:  rgb(21, 240, 21);
+  border: 1px solid aliceblue;
+  font-family: Menlo, baskerville, sans;
+  font-size: 40px; /* FONT SIZE */
+  text-align: center; /* ALIGN TEXT */
+  color: #222324; /* FONT COLOR */
+  line-height: 1.6em;
+  transition: 0.3s;
+  box-shadow: 0 8px 40px -16px rgba(0, 0, 0, 0.3);
+  background-color: white opacity 80%;
+}
+.inprogress {
+  background-color:rgb(255, 225, 0);
+  border: 1px solid aliceblue;
+  font-family: Menlo, baskerville, sans;
+  font-size: 40px; /* FONT SIZE */
+  text-align: center; /* ALIGN TEXT */
+  color: #222324; /* FONT COLOR */
+  line-height: 1.6em;
+  transition: 0.3s;
+  box-shadow: 0 8px 40px -16px rgba(0, 0, 0, 0.3);
+  background-color: white opacity 80%;
+}
+.todo {
+  background-color: red;
+  border: 1px solid aliceblue;
+  font-family: Menlo, baskerville, sans;
+  font-size: 40px; /* FONT SIZE */
+  text-align: center; /* ALIGN TEXT */
+  color: #222324; /* FONT COLOR */
+  line-height: 1.6em;
+  transition: 0.3s;
+  box-shadow: 0 8px 40px -16px rgba(0, 0, 0, 0.3);
+  background-color: white opacity 80%;
 }
